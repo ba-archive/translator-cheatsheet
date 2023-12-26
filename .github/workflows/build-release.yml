@@ -12,7 +12,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        platform: [macos-latest, ubuntu-20.04, windows-latest]
+        # platform: [macos-latest, ubuntu-20.04, windows-latest]
+        platform: [ubuntu-20.04] # 用最便宜的 ubuntu 测试
     runs-on: ${{ matrix.platform }}
 
     steps:
