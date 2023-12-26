@@ -8,6 +8,7 @@ import AutoImport from "unplugin-auto-import/vite";
 import { ArcoResolver } from "unplugin-vue-components/resolvers";
 import Components from "unplugin-vue-components/vite";
 import vue from "@vitejs/plugin-vue";
+import { vitePluginForArco } from "@arco-plugins/vite-vue";
 
 // https://vitejs.dev/config/
 export default defineConfig(async () => ({
@@ -21,8 +22,23 @@ export default defineConfig(async () => ({
       include: [/\.vue$/, /\.md$/],
       resolvers: [ArcoResolver({ sideEffect: true })],
     }),
+    vitePluginForArco({
+      style: "css",
+    }),
   ],
-
+  css: {
+    postcss: {
+      plugins: [
+        postcssPresetEnv(),
+        px2rem({
+          rootValue: 16,
+          propBlackList: ["font-size", "border", "border-width"],
+          exclude: /(node_module)/,
+        }),
+        tailwindcss(tailwindConfig),
+      ],
+    },
+  },
   // Vite options tailored for Tauri development and only applied in `tauri dev` or `tauri build`
   //
   // 1. prevent vite from obscuring rust errors
