@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia';
 import { Dictionary } from '@/types/Dictionary';
-import dictionary from 'public/dictionary.json';
+import dictionary from '../../public/dictionary.json';
 
 export const useDictionaryStore = defineStore({
   id: 'cheatsheet-dictionary',

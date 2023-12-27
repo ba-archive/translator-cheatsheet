@@ -3,8 +3,12 @@ import { ref, computed, watch } from "vue";
 import { Settings } from "@/types/Settings";
 import { useSettingsStore } from "@/store/settings";
 import { toggleTheme, setAlwaysOnTop } from "@/utils/viewsUtils";
+import { Message } from "@arco-design/web-vue";
+import { useDictionaryStore } from "@/store/dictionary";
+import axios from "axios";
 
 const useStore = useSettingsStore();
+const useDictionary = useDictionaryStore();
 
 const settings = computed({
   get: () => useStore.settings,
@@ -22,10 +26,29 @@ watch(
   }
 );
 
+async function updateDictionary() {
+  axios
+    .get(`https://translator.blue-archive.io/dictionary.json?t=${Date.now()}`)
+    .then(res => {
+      if (res.status === 200) {
+        useDictionary.setDictionary(res.data);
+      } else {
+        throw new Error("获取词典更新失败");
+      }
+    })
+    .catch(err => {
+      Message.error(err.message);
+    });
+}
+
 watch(
   () => settings.value.alwaysOnTop,
   async value => {
-    await setAlwaysOnTop(value);
+    const code = await setAlwaysOnTop(value);
+    if (code !== 0) {
+      Message.error("当前环境无法设置");
+      settings.value.alwaysOnTop = false;
+    }
   }
 );
 </script>
@@ -40,8 +63,8 @@ watch(
   </a-button>
 
   <a-modal v-model:visible="visible" title="设置" width="auto">
-    <div class="flex flex-col gap-3">
-      <div class="flex justify-between gap-3">
+    <a-space direction="vertical" :style="{minWidth: '200px'}">
+      <div class="flex justify-between gap-3 items-center">
         <a-tooltip>
           <template #content>
             <div>使用深色背景。</div>
@@ -51,17 +74,30 @@ watch(
         <a-checkbox v-model="settings.darkMode" />
       </div>
 
-      <div class="flex justify-between gap-3">
+      <div class="flex justify-between gap-3 items-center">
         <a-tooltip>
           <template #content>
-          <div>窗口会总是浮在所有应用前方，不会被遮挡。</div>
-        </template>
+            <div>窗口会总是浮在所有应用前方，不会被遮挡。</div>
+          </template>
           <span>总是置于屏幕顶端</span>
         </a-tooltip>
         <a-checkbox v-model="settings.alwaysOnTop" />
       </div>
-    </div>
+
+      <div class="flex justify-between gap-3 items-center">
+        <a-tooltip>
+          <template #content>
+            <div>从服务器获取最新的词典条目。</div>
+          </template>
+          <span>更新词典条目</span>
+        </a-tooltip>
+        <a-button type="primary" @click="updateDictionary">
+          更新
+        </a-button>
+      </div>
+    </a-space>
   </a-modal>
 </template>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+</style>

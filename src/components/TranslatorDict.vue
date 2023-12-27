@@ -1,6 +1,18 @@
 <script setup lang="ts">
 import WordCard from "./WordCard.vue";
-import { ref, onMounted, onUnmounted } from "vue";
+import { ref, onMounted, onUnmounted, computed } from "vue";
+import { Dictionary } from "@/types/Dictionary";
+import { getPossibleCandidate } from "@/utils/filterUtils";
+
+const props = defineProps<{
+  dictionary: Dictionary[];
+}>();
+
+const searchString = ref("");
+
+const filteredDictionary = computed(() =>
+  getPossibleCandidate(searchString.value, props.dictionary)
+);
 
 function getVirtualListHeight() {
   const height = window.innerHeight;
@@ -15,14 +27,15 @@ function handleResize() {
 
 onMounted(() => {
   window.addEventListener("resize", handleResize);
-}),
-  onUnmounted(() => {
-    window.removeEventListener("resize", handleResize);
-  });
+});
+
+onUnmounted(() => {
+  window.removeEventListener("resize", handleResize);
+});
 </script>
 
 <template>
-  <a-input placeholder="输入中文或日语" />
+  <a-input allow-clear v-model="searchString" placeholder="输入中文或日语" />
   <div class="dict-body mt-5">
     <a-list
       fill
@@ -32,16 +45,10 @@ onMounted(() => {
         height: virtualListHeight,
         estimatedSize: 83,
       }"
-      :data="Array(100).fill({
-            textJp: '日语',
-            textCn: '中文',
-            comment: '注释',
-          })"
+      :data="filteredDictionary"
     >
-      <template #item="{ item, index }">
-        <word-card
-          :item="item"
-        />
+      <template #item="{ item }">
+        <word-card :item="item" :key="item.TextCn" />
       </template>
     </a-list>
   </div>
