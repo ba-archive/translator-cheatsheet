@@ -7,7 +7,9 @@ const specialCharacters = new RegExp(
 );
 
 export function similarity(s1: string | undefined | null, s2: string | undefined | null): number {
+  // @ts-ignore
   if ([s1, s2].some(s => [undefined, null].includes(s))) return 0;
+  // @ts-ignore
   return 1 - distance(s1, s2) / Math.max(s1.length, s2.length);
 }
 

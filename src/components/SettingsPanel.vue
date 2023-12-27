@@ -26,18 +26,24 @@ watch(
   }
 );
 
+const fetching = ref(false);
+
 async function updateDictionary() {
+  fetching.value = true;
   axios
     .get(`https://translator.blue-archive.io/dictionary.json?t=${Date.now()}`)
     .then(res => {
       if (res.status === 200) {
         useDictionary.setDictionary(res.data);
+        Message.success("词典更新成功");
       } else {
         throw new Error("获取词典更新失败");
       }
     })
     .catch(err => {
       Message.error(err.message);
+    }).finally(() => {
+      fetching.value = false;
     });
 }
 
@@ -91,7 +97,7 @@ watch(
           </template>
           <span>更新词典条目</span>
         </a-tooltip>
-        <a-button type="primary" @click="updateDictionary">
+        <a-button type="primary" :loading="fetching" @click="updateDictionary">
           更新
         </a-button>
       </div>
