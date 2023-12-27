@@ -62,15 +62,4 @@ jobs:
         with:
           name: release-${{ matrix.platform }}
           path: ./src-tauri/target/release/bundle/*
-
-      - name: Update index file
-        uses: easingthemes/ssh-deploy@main
-        with:
-          SSH_PRIVATE_KEY: ${{ secrets.SERVER_PASS_PRODUCTION }}
-          ARGS: "-rltgoDzvO"
-          SOURCE: "./dist/dictionary.json"
-          REMOTE_HOST: ${{ secrets.SERVER_HOST_PRODUCTION }}
-          REMOTE_USER: ${{ secrets.SERVER_USER_PRODUCTION }}
-          TARGET: "/var/www/translator"
-          EXCLUDE: ".git*"
   

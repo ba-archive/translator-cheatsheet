@@ -1,0 +1,30 @@
+name: Update Dictionary
+on:
+  push:
+    paths:
+      - "./public/dictionary.json"
+  workflow_dispatch:
+
+jobs:
+  release:
+    permissions:
+      contents: write
+    strategy:
+      fail-fast: false
+      matrix:
+        # platform: [macos-latest, ubuntu-20.04, windows-latest]
+        platform: [ubuntu-20.04] # 用最便宜的 ubuntu 测试
+    runs-on: ${{ matrix.platform }}
+
+    steps:
+      - name: Update dictionary
+        uses: easingthemes/ssh-deploy@main
+        with:
+          SSH_PRIVATE_KEY: ${{ secrets.SERVER_PASS_PRODUCTION }}
+          ARGS: "-rltgoDzvO"
+          SOURCE: "./dist/dictionary.json"
+          REMOTE_HOST: ${{ secrets.SERVER_HOST_PRODUCTION }}
+          REMOTE_USER: ${{ secrets.SERVER_USER_PRODUCTION }}
+          TARGET: "/var/www/translator"
+          EXCLUDE: ".git*"
+  
