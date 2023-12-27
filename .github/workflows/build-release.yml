@@ -60,7 +60,7 @@ jobs:
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
         with:
-          name: build
+          name: release-${{ matrix.platform }}
           path: ./src-tauri/target/release/bundle/*
 
       - name: Update index file
