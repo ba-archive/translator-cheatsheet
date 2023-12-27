@@ -5,6 +5,6 @@ export function toggleTheme(darkTheme = false) {
 }
 
 export async function setAlwaysOnTop(alwaysOnTop: boolean) {
-  console.log("setAlwaysOnTop", alwaysOnTop)
+  if (!window.__TAURI__) return;
   await appWindow.setAlwaysOnTop(alwaysOnTop);
 }

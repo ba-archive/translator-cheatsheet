@@ -3,6 +3,18 @@
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 import SettingsPanel from './components/SettingsPanel.vue';
 import TranslatorDict from './components/TranslatorDict.vue';
+import { useSettingsStore } from './store/settings';
+import { toggleTheme, setAlwaysOnTop } from './utils/viewsUtils';
+import { onMounted } from 'vue';
+
+const useStore = useSettingsStore();
+
+const settings = useStore.getSettings;
+
+onMounted(() => {
+  toggleTheme(settings.darkMode);
+  setAlwaysOnTop(settings.alwaysOnTop);
+});
 </script>
 
 <template>
