@@ -6,7 +6,7 @@
     "distDir": "../dist"
   },
   "package": {
-    "productName": "翻译速查",
+    "productName": "translator-cheatsheet",
     "version": "0.0.0"
   },
   "tauri": {
