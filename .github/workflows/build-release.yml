@@ -46,12 +46,20 @@ jobs:
           version: 8
           run_install: true
       
-      - name: Rewrite app version with tag name
+      - name: Rewrite version [macos]
+        if: matrix.platform == 'macos-latest'
         run: |
-          sed -i "s/0.0.0/${{ github.ref_name }}/g" src-tauri/Cargo.toml
-          sed -i "s/0.0.0/${{ github.ref_name }}/g" src-tauri/tauri.conf.json
-          sed -i "s/0.0.0/${{ github.ref_name }}/g" package.json
-
+          sed -i '' 's/0.0.0/${{ github.ref_name }}/g' src-tauri/Cargo.toml
+          sed -i '' 's/0.0.0/${{ github.ref_name }}/g' src-tauri/tauri.conf.json
+          sed -i '' 's/0.0.0/${{ github.ref_name }}/g' package.json
+      
+      - name: Rewrite version [windows]
+        if: matrix.platform == 'windows-latest'
+        run: |
+          sed -i 's/0.0.0/${{ github.ref_name }}/g' src-tauri/Cargo.toml
+          sed -i 's/0.0.0/${{ github.ref_name }}/g' src-tauri/tauri.conf.json
+          sed -i 's/0.0.0/${{ github.ref_name }}/g' package.json
+          
       - name: Build the app
         uses: tauri-apps/tauri-action@v0
         env:
