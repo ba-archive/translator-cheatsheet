@@ -2,7 +2,7 @@ name: Release
 on:
   push:
     tags:
-      - "v*"
+      - "*.*.*"
   workflow_dispatch:
 
 jobs:
@@ -45,6 +45,11 @@ jobs:
         with:
           version: 8
           run_install: true
+      
+      - name: Rewrite app version with tag name
+        run: |
+          sed -i "s/0.0.0/${{ github.ref_name }}/g" ./src-tauri/Cargo.toml
+          sed -i "s/0.0.0/${{ github.ref_name }}/g" ./src-tauri/tauri.conf.json
 
       - name: Build the app
         uses: tauri-apps/tauri-action@v0
@@ -52,7 +57,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tagName: ${{ github.ref_name }} # This only works if your workflow triggers on new tags.
-          releaseName: "App Name v__VERSION__" # tauri-action replaces \_\_VERSION\_\_ with the app version.
+          releaseName: "Release v__VERSION__" # tauri-action replaces \_\_VERSION\_\_ with the app version.
           releaseBody: "See the assets to download and install this version."
           releaseDraft: true
           prerelease: false
