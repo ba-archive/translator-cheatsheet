@@ -67,7 +67,11 @@
     },
     "bundle": {
       "active": true,
-      "targets": "all",
+      "targets": [
+        "nsis",
+        "dmg",
+        "updater"
+      ],
       "identifier": "io.blue-archive.docs",
       "icon": [
         "icons/32x32.png",
