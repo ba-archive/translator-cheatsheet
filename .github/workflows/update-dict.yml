@@ -2,7 +2,7 @@ name: Update Dictionary
 on:
   push:
     paths:
-      - "./public/dictionary.json"
+      - "public/dictionary.json"
   workflow_dispatch:
 
 jobs:

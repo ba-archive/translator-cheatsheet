@@ -48,9 +48,9 @@ jobs:
       
       - name: Rewrite app version with tag name
         run: |
-          sed -i "s/0.0.0/${{ github.ref_name }}/g" ./src-tauri/Cargo.toml
-          sed -i "s/0.0.0/${{ github.ref_name }}/g" ./src-tauri/tauri.conf.json
-          sed -i "s/0.0.0/${{ github.ref_name }}/g" ./package.json
+          sed -i "s/0.0.0/${{ github.ref_name }}/g" src-tauri/Cargo.toml
+          sed -i "s/0.0.0/${{ github.ref_name }}/g" src-tauri/tauri.conf.json
+          sed -i "s/0.0.0/${{ github.ref_name }}/g" package.json
 
       - name: Build the app
         uses: tauri-apps/tauri-action@v0
