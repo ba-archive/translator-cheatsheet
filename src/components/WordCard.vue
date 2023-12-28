@@ -27,7 +27,7 @@ function copyText(text: string) {
         {{ props.item.comment }}
       </a-typography-paragraph>
       <a-space size="mini" v-if="Array.isArray(props.item?.tags)">
-        <a-tag v-for="tag in props.item.tags">{{ tag }}</a-tag>
+        <a-tag color="arcoblue" v-for="tag in props.item.tags">{{ tag }}</a-tag>
       </a-space>
     </a-space>
 

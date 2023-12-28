@@ -8,538 +8,332 @@
     "TextCn": "夏莱",
     "TextEn": "Schale",
     "comment": "测试备注",
-    "tags": ["测试标签"]
+    "tags": ["夏莱", "社团"]
   },
   {
-    "Code": 2206508743,
-    "TextKr": "와일드헌트 예술학원",
     "TextJp": "ワイルドハント芸術学院",
-    "TextTh": "สถาบันศิลปะไวลด์ฮันต์",
-    "TextTw": "狂野亨特藝術學園",
     "TextCn": "狂猎艺术学院",
-    "TextEn": "Wildhunt Art Academy"
+    "tags": ["学校全称"]
   },
   {
-    "Code": 2237321000,
-    "TextKr": "귀가부(게헨나)",
     "TextJp": "帰宅部（ゲヘナ）",
-    "TextTh": "ชมรมกลับบ้าน (เกเฮนน่า)",
-    "TextTw": "回家部(格黑娜)",
     "TextCn": "回家部(格黑娜)",
-    "TextEn": "Go-Home Club (Gehenna)"
+    "tags": ["格黑娜学园", "社团"]
   },
   {
-    "Code": 2481622338,
-    "TextKr": "귀가부(트리니티)",
     "TextJp": "帰宅部（トリニティ）",
-    "TextTh": "ชมรมกลับบ้าน (ทรีนิตี้)",
-    "TextTw": "回家部(三一)",
     "TextCn": "回家部(圣三一)",
-    "TextEn": "Go-Home Club (Trinity)"
+    "tags": ["圣三一综合学园", "社团"]
   },
   {
-    "Code": 3130601975,
-    "TextKr": "귀가부(밀레니엄)",
     "TextJp": "帰宅部（ミレニアム）",
-    "TextTh": "ชมรมกลับบ้าน (มิลเลเนียม)",
-    "TextTw": "回家部(千年)",
     "TextCn": "回家部(千年)",
-    "TextEn": "Go-Home Club (Millennium)"
+    "tags": ["千年科技学院", "社团"]
   },
   {
-    "Code": 3591139121,
-    "TextKr": "귀가부(산해경)",
     "TextJp": "帰宅部（山海経）",
-    "TextTh": "ชมรมกลับบ้าน (ซานไห่จิง)",
-    "TextTw": "回家部(山海經)",
     "TextCn": "回家部(山海经)",
-    "TextEn": "Go-Home Club (Shanhaijing)"
+    "tags": ["山海经高级中学校", "社团"]
   },
   {
-    "Code": 36621418,
-    "TextKr": "귀가부(백귀야행)",
     "TextJp": "帰宅部（百鬼夜行）",
-    "TextTh": "ชมรมกลับบ้าน (เฮียกคิยาโค)",
-    "TextTw": "回家部(百鬼夜行)",
     "TextCn": "回家部(百鬼夜行)",
-    "TextEn": "Go-Home Club (Hyakkiyako)"
+    "tags": ["百鬼夜行联合学院", "社团"]
   },
   {
-    "Code": "Abydos",
-    "TextKr": "아비도스 고등학교",
     "TextJp": "アビドス高等学校",
-    "TextTh": "โรงเรียนมัธยมอะบิดอส",
-    "TextTw": "阿拜多斯高中",
-    "TextEn": "Abydos High School",
-    "TextCn": "阿比多斯高级中学"
+    "TextCn": "阿比多斯高级中学",
+    "tags": ["学校全称"]
   },
   {
-    "Code": "anzenkyoku",
-    "TextKr": "생활안전국",
     "TextJp": "生活安全局",
-    "TextTh": "สำนักรักษาความปลอดภัย",
-    "TextTw": "生活安全局",
-    "TextEn": "Public Safety Bureau",
-    "TextCn": "生活安全局"
+    "TextCn": "生活安全局",
+    "tags": ["瓦尔基里警察学校", "社团"]
   },
   {
-    "Code": "Arius",
-    "TextKr": "아리우스 분교",
     "TextJp": "アリウス分校",
-    "TextTh": "โรงเรียนสาขาอาเรียส",
-    "TextTw": "奧利斯分校",
-    "TextEn": "Arius Satellite School",
-    "TextCn": "阿里乌斯分校"
+    "TextCn": "阿里乌斯分校",
+    "tags": ["学校全称"]
   },
   {
-    "Code": "AriusSqud",
-    "TextKr": "아리우스 스쿼드",
     "TextJp": "アリウススクワッド",
-    "TextTh": "สควอดของอาเรียส",
-    "TextTw": "奧利斯小隊",
-    "TextEn": "Arius Squad",
-    "TextCn": "阿里乌斯小队"
+    "TextCn": "阿里乌斯小队",
+    "tags": ["阿里乌斯分校", "社团"]
   },
   {
-    "Code": "BlackTortoisePromenade",
-    "TextKr": "현무상회",
     "TextJp": "玄武商会",
-    "TextCn": "玄武商会"
+    "TextCn": "玄武商会",
+    "tags": ["山海经高级中学校", "社团"]
   },
   {
-    "Code": "BookClub",
-    "TextKr": "도서부",
     "TextJp": "図書委員会",
-    "TextTh": "ชมรมอ่านหนังสือ",
-    "TextTw": "圖書委員會",
-    "TextEn": "Library Committee",
-    "TextCn": "图书委员会"
+    "TextCn": "图书委员会",
+    "tags": ["圣三一综合学园", "社团"]
   },
   {
-    "Code": "Class227",
-    "TextKr": "227호 특별반",
     "TextJp": "227号特別クラス",
-    "TextTh": "ห้องพิเศษ 227",
-    "TextTw": "227號特別班",
-    "TextEn": "Spec Ops No. 227",
-    "TextCn": "227号特别班"
+    "TextCn": "227号特别班",
+    "tags": ["红冬联邦学园", "社团"]
   },
   {
-    "Code": "CleanNClearing",
-    "TextKr": "Cleaning&Clearing",
     "TextJp": "Cleaning&Clearing",
-    "TextTh": "C&C",
-    "TextTw": "Cleaning&Clearing",
-    "TextEn": "Cleaning & Clearing",
     "TextCn": "Cleaning&Clearing",
-    "comment": "缩写使用C&C"
+    "comment": "缩写使用C&C",
+    "tags": ["千年科技学院", "社团"]
   },
   {
-    "Code": "Countermeasure",
-    "TextKr": "대책위원회",
     "TextJp": "対策委員会",
-    "TextTh": "คณะกรรมการแผนงาน",
-    "TextTw": "對策委員會",
-    "TextEn": "Foreclosure Task Force",
-    "TextCn": "对策委员会"
+    "TextCn": "对策委员会",
+    "tags": ["阿比多斯高级中学", "社团"]
   },
   {
-    "Code": "Emergentology",
-    "TextKr": "응급의학부",
     "TextJp": "救急医学部",
-    "TextTh": "ฝ่ายการแพทย์ฉุกเฉิน",
-    "TextTw": "急救醫學部",
-    "TextEn": "Medical Emergency Club",
-    "TextCn": "急救医学部"
+    "TextCn": "急救医学部",
+    "tags": ["格黑娜学园", "社团"]
   },
   {
-    "Code": "EmptyClub",
-    "TextKr": "없음",
     "TextJp": "無し",
-    "TextTh": "ไม่มี",
-    "TextTw": "無",
-    "TextEn": "None",
     "TextCn": "无社团"
   },
   {
-    "Code": "Endanbou",
-    "TextKr": "연단방",
     "TextJp": "錬丹術研究会",
-    "TextTh": "ชมรมวิจัยศาสตร์การปรุงยา",
-    "TextTw": "鍊丹術研究會",
-    "TextEn": "Eastern Alchemy Society",
-    "TextCn": "炼丹术研究会"
+    "TextCn": "炼丹术研究会",
+    "tags": ["山海经高级中学校", "社团"]
   },
   {
-    "Code": "Engineer",
-    "TextKr": "엔지니어부",
     "TextJp": "エンジニア部",
-    "TextTh": "ชมรมวิศวกรรม",
-    "TextTw": "工程師部",
-    "TextEn": "Engineering Department",
-    "TextCn": "工程部"
+    "TextCn": "工程部",
+    "tags": ["千年科技学院", "社团"]
   },
   {
-    "Code": "ETC",
-    "TextKr": "그 외",
     "TextJp": "その他",
-    "TextTh": "อื่นๆ",
-    "TextTw": "其他",
-    "TextEn": "Etc.",
     "TextCn": "其他"
   },
   {
-    "Code": "FoodService",
-    "TextKr": "급양부",
     "TextJp": "給食部",
-    "TextTh": "ชมรมโภชนาการ",
-    "TextTw": "供給部",
-    "TextEn": "School Lunch Club",
-    "TextCn": "供餐部"
+    "TextCn": "供餐部",
+    "tags": ["格黑娜学园", "社团"]
   },
   {
-    "Code": "Fuuki",
-    "TextKr": "선도부",
     "TextJp": "風紀委員会",
-    "TextTh": "คณะกรรมการวินัย",
-    "TextTw": "風紀委員會",
-    "TextEn": "Prefect Team",
-    "TextCn": "风纪委员会"
+    "TextCn": "风纪委员会",
+    "tags": ["格黑娜学园", "社团"]
   },
   {
-    "Code": "GameDev",
-    "TextKr": "게임개발부",
     "TextJp": "ゲーム開発部",
-    "TextTh": "ชมรมพัฒนาเกม",
-    "TextTw": "遊戲開發部",
-    "TextEn": "Game Development Department",
-    "TextCn": "游戏开发部"
+    "TextCn": "游戏开发部",
+    "tags": ["千年科技学院", "社团"]
   },
   {
-    "Code": "Gehenna",
-    "TextKr": "게헨나 학원",
     "TextJp": "ゲヘナ学園",
-    "TextTh": "สถาบันเกเฮนน่า",
-    "TextTw": "格黑娜學園",
-    "TextEn": "Gehenna Academy",
-    "TextCn": "格黑娜学园"
+    "TextCn": "格黑娜学园",
+    "tags": ["学校全称"]
   },
   {
-    "Code": "Genryumon",
-    "TextKr": "현룡문",
     "TextJp": "玄竜門",
-    "TextCn": "玄龙门"
+    "TextCn": "玄龙门",
+    "tags": ["山海经高级中学校", "社团"]
   },
   {
-    "Code": "GourmetClub",
-    "TextKr": "미식연구회",
     "TextJp": "美食研究会",
-    "TextTh": "ชมรมชิมอาหาร",
-    "TextTw": "美食研究會",
-    "TextEn": "Gourmet Research Society",
-    "TextCn": "美食研究会"
+    "TextCn": "美食研究会",
+    "tags": ["格黑娜学园", "社团"]
   },
   {
-    "Code": "HotSpringsDepartment",
-    "TextKr": "온천개발부",
     "TextJp": "温泉開発部",
-    "TextCn": "温泉开发部"
+    "TextCn": "温泉开发部",
+    "tags": ["格黑娜学园", "社团"]
   },
   {
-    "Code": "HoukagoDessert",
-    "TextKr": "방과후 디저트부",
     "TextJp": "放課後スイーツ部",
-    "TextTh": "ชมรมของหวานหลังเลิกเรียน",
-    "TextTw": "放學後的甜點部",
-    "TextEn": "After-School Sweets Club",
-    "TextCn": "放学后甜点部"
+    "TextCn": "放学后甜点部",
+    "tags": ["圣三一综合学园", "社团"]
   },
   {
-    "Code": "Hyakkiyako",
-    "TextKr": "백귀야행 연합학원",
     "TextJp": "百鬼夜行連合学院",
-    "TextTh": "สหพันธ์เฮียกคิยาโค",
-    "TextTw": "百鬼夜行聯合學園",
-    "TextEn": "Allied Hyakkiyako Academy",
-    "TextCn": "百鬼夜行联合学院"
+    "TextCn": "百鬼夜行联合学院",
+    "tags": ["学校全称"]
   },
   {
-    "Code": "Justice",
-    "TextKr": "정의실현부",
     "TextJp": "正義実現委員会",
-    "TextTh": "ชมรมทวงความยุติธรรม",
-    "TextTw": "實現正義部",
-    "TextEn": "Justice Task Force",
-    "TextCn": "正义实现委员会"
+    "TextCn": "正义实现委员会",
+    "tags": ["圣三一综合学园", "社团"]
   },
   {
-    "Code": "KnightsHospitaller",
-    "TextKr": "구호기사단",
     "TextJp": "救護騎士団",
-    "TextTh": "ชมรมอัศวินบรรเทาทุกข์",
-    "TextTw": "救護騎士團",
-    "TextEn": "Remedial Knights",
-    "TextCn": "救护骑士团"
+    "TextCn": "救护骑士团",
+    "tags": ["圣三一综合学园", "社团"]
   },
   {
-    "Code": "Kohshinjo68",
-    "TextKr": "흥신소 68",
     "TextJp": "便利屋68",
-    "TextTh": "หน่วยรับจ้างสารพัด 68",
-    "TextTw": "便利屋68",
-    "TextEn": "Problem Solver 68",
-    "TextCn": "便利屋68"
+    "TextCn": "便利屋68",
+    "tags": ["格黑娜学园", "社团"]
   },
   {
-    "Code": "LaborParty",
-    "TextKr": "용역부",
     "TextJp": "工務部",
-    "TextCn": "工务部"
+    "TextCn": "工务部",
+    "tags": ["红冬联邦学园", "社团"]
   },
   {
     "TextJp": "出版部",
-    "TextCn": "出版部"
+    "TextCn": "出版部",
+    "tags": ["红冬联邦学园", "社团"]
   },
   {
     "TextJp": "訓育支援部「梅花園」",
-    "TextCn": "训育援助部「梅花园」"
+    "TextCn": "训育援助部「梅花园」",
+    "tags": ["山海经高级中学校", "社团"]
   },
   {
-    "Code": "MatsuriOffice",
-    "TextKr": "마츠리운영관리부",
     "TextJp": "お祭り運営委員会",
-    "TextTh": "ชมรมจัดงานเทศกาล",
-    "TextTw": "節慶營運管理部",
-    "TextEn": "Festival Operations Department",
-    "TextCn": "祭典运营委员会"
+    "TextCn": "祭典运营委员会",
+    "tags": ["百鬼夜行联合学院", "社团"]
   },
   {
-    "Code": "Meihuayuan",
-    "TextKr": "매화원",
     "TextJp": "梅花園",
-    "TextTh": "สวนต้นบ๊วย",
-    "TextTw": "梅花園",
-    "TextEn": "Plum Blossom Garden",
-    "TextCn": "梅花园"
+    "TextCn": "梅花园",
+    "tags": ["山海经高级中学校", "社团"]
   },
   {
-    "Code": "Millennium",
-    "TextKr": "밀레니엄 사이언스 스쿨",
     "TextJp": "ミレニアムサイエンススクール",
-    "TextTh": "โรงเรียนวิทย์มิลเลเนียม",
-    "TextTw": "千年科學學園",
-    "TextEn": "Millennium Science School",
-    "TextCn": "千年科技学院"
+    "TextCn": "千年科技学院",
+    "tags": ["学校全称"]
   },
   {
-    "Code": "NinpoKenkyubu",
-    "TextKr": "인법연구부",
     "TextJp": "忍術研究部",
-    "TextTh": "ชมรมวิจัยศาสตร์นินจา",
-    "TextTw": "忍術研究部",
-    "TextEn": "Ninjutsu Research Club",
-    "TextCn": "忍术研究部"
+    "TextCn": "忍术研究部",
+    "tags": ["百鬼夜行联合学院", "社团"]
   },
   {
-    "Code": "Onmyobu",
-    "TextKr": "음양부",
     "TextJp": "陰陽部",
-    "TextTh": "ชมรมหยินหยาง",
-    "TextTw": "陰陽部",
-    "TextEn": "Yin-Yang Club",
-    "TextCn": "阴阳部"
+    "TextCn": "阴阳部",
+    "tags": ["百鬼夜行联合学院", "社团"]
   },
   {
-    "Code": "PandemoniumSociety",
-    "TextKr": "판데모니움 소사이어티",
     "TextJp": "パンデモニウム・ソサエティー",
-    "TextTh": "แพนเดโมเนียม โซไซตี้",
-    "TextTw": "萬魔殿",
-    "TextEn": "Pandemonium Society",
-    "TextCn": "万魔殿"
+    "TextCn": "万魔殿",
+    "tags": ["格黑娜学园", "社团"]
   },
   {
-    "Code": "PublicPeaceBureau",
-    "TextKr": "공안국",
     "TextJp": "公安局",
-    "TextCn": "公安局"
+    "TextCn": "公安局",
+    "tags": ["瓦尔基里警察学校", "社团"]
   },
   {
-    "Code": "RabbitPlatoon",
-    "TextKr": "RABBIT 소대",
     "TextJp": "RABBIT小隊",
-    "TextTh": "กองทหาร RABBIT",
-    "TextTw": "RABBIT小隊",
-    "TextEn": "RABBIT Squad",
-    "TextCn": "RABBIT小队"
+    "TextCn": "RABBIT小队",
+    "tags": ["SRT特殊学园", "社团"]
   },
   {
     "TextJp": "FOX小隊",
-    "TextCn": "FOX小队"
+    "TextCn": "FOX小队",
+    "tags": ["SRT特殊学园", "社团"]
   },
   {
-    "Code": "RedWinter",
-    "TextKr": "붉은겨울 연방학원",
     "TextJp": "レッドウィンター連邦学園",
-    "TextTh": "สหภาพเรดวินเทอร์",
-    "TextTw": "赤冬聯邦學園",
-    "TextEn": "Red Winter Federal Academy",
-    "TextCn": "红冬联邦学园"
+    "TextCn": "红冬联邦学园",
+    "tags": ["学校全称"]
   },
   {
-    "Code": "RedwinterSecretary",
-    "TextKr": "붉은겨울 사무국",
     "TextJp": "レッドウィンター事務局",
-    "TextTh": "สำนักเลขาธิการเรดวินเทอร์",
-    "TextTw": "赤冬事務局",
-    "TextEn": "Red Winter Office",
-    "TextCn": "红冬事务局"
+    "TextCn": "红冬事务局",
+    "tags": ["红冬联邦学园", "社团"]
   },
   {
-    "Code": "RemedialClass",
-    "TextKr": "보충수업부",
     "TextJp": "補習授業部",
-    "TextTh": "ชมรมชั้นเรียนเสริม",
-    "TextTw": "補課部",
-    "TextEn": "Make-Up Work Club",
-    "TextCn": "补习部"
+    "TextCn": "补习部",
+    "tags": ["圣三一综合学园", "社团"]
   },
   {
-    "Code": "Shanhaijing",
-    "TextKr": "산해경 고급중학교",
     "TextJp": "山海経高級中学校",
-    "TextTh": "โรงเรียนมัธยมซานไห่จิง",
-    "TextTw": "山海經高級中學",
-    "TextEn": "Shanhaijing Academy",
-    "TextCn": "山海经高级中学校"
+    "TextCn": "山海经高级中学校",
+    "tags": ["学校全称"]
   },
   {
-    "Code": "Shugyobu",
-    "TextKr": "수행부",
     "TextJp": "修行部",
-    "TextTh": "ชมรมฝึกฝน",
-    "TextTw": "修行部",
-    "TextEn": "Inner Discipline Club",
-    "TextCn": "修行部"
+    "TextCn": "修行部",
+    "tags": ["百鬼夜行联合学院", "社团"]
   },
   {
-    "Code": "SisterHood",
-    "TextKr": "시스터후드",
     "TextJp": "シスターフッド",
-    "TextTh": "ชมรมซิสเตอร์",
-    "TextTw": "修女會",
-    "TextEn": "The Sisterhood",
-    "TextCn": "修女会"
+    "TextCn": "修女会",
+    "tags": ["圣三一综合学园", "社团"]
   },
   {
-    "Code": "SPTF",
-    "TextKr": "초현상특무부",
     "TextJp": "特異現象捜査部",
-    "TextTh": "ชมรมปรากฎการณ์ลี้ลับ",
-    "TextTw": "特異現象搜查部",
-    "TextEn": "Super Phenomenon Task Force",
-    "TextCn": "特异现象搜查部"
+    "TextCn": "特异现象搜查部",
+    "tags": ["千年科技学院", "社团"]
   },
   {
-    "Code": "SRT",
-    "TextKr": "SRT 특수학원",
     "TextJp": "SRT特殊学園",
-    "TextTh": "สถาบันพิเศษ SRT",
-    "TextTw": "SRT特殊學園",
-    "TextEn": "SRT Special Academy",
-    "TextCn": "SRT特殊学园"
+    "TextCn": "SRT特殊学园",
+    "tags": ["学校全称"]
   },
   {
-    "Code": "TeaParty",
-    "TextKr": "티파티",
     "TextJp": "ティーパーティー",
-    "TextCn": "茶会"
+    "TextCn": "茶会",
+    "tags": ["圣三一综合学园", "社团"]
   },
   {
-    "Code": "TheSeminar",
-    "TextKr": "세미나",
     "TextJp": "セミナー",
-    "TextTh": "เซมิน่า",
-    "TextTw": "研討會",
-    "TextEn": "Seminar",
-    "TextCn": "研讨会"
+    "TextCn": "研讨会",
+    "tags": ["千年科技学院", "社团"]
   },
   {
-    "Code": "TrainingClub",
-    "TextKr": "트레이닝부",
     "TextJp": "トレーニング部",
-    "TextTh": "ชมรมออกกำลังกาย",
-    "TextTw": "訓練部",
-    "TextEn": "Athletics Training Club",
-    "TextCn": "训练部"
+    "TextCn": "训练部",
+    "tags": ["千年科技学院", "社团"]
   },
   {
-    "Code": "Trinity",
-    "TextKr": "트리니티 종합학원",
     "TextJp": "トリニティ総合学園",
-    "TextTh": "โรงเรียนสามัญทรีนิตี้",
-    "TextTw": "三一綜合學園",
-    "TextEn": "Trinity General School",
-    "TextCn": "圣三一综合学园"
+    "TextCn": "圣三一综合学园",
+    "tags": ["学校全称"]
   },
   {
-    "Code": "TrinityVigilance",
-    "TextKr": "트리니티 자경단",
     "TextJp": "トリニティ自警団",
-    "TextTh": "กลุ่มรักษาความสงบแห่งทรีนิตี้",
-    "TextTw": "三一自衛隊",
-    "TextEn": "Trinity's Vigilante Crew",
-    "TextCn": "圣三一义警团"
+    "TextCn": "圣三一义警团",
+    "tags": ["圣三一综合学园", "社团"]
   },
   {
-    "Code": "Valkyrie",
-    "TextKr": "발키리 경찰학교",
     "TextJp": "ヴァルキューレ警察学校",
-    "TextTh": "สถาบันฝึกตำรวจวัลคิรี่",
-    "TextTw": "女武神警察學園",
-    "TextEn": "Valkyrie Police School",
-    "TextCn": "瓦尔基里警察学校"
+    "TextCn": "瓦尔基里警察学校",
+    "tags": ["学校全称"]
   },
   {
-    "Code": "Veritas",
-    "TextKr": "베리타스",
     "TextJp": "ヴェリタス",
-    "TextTh": "เวอริทัส",
-    "TextTw": "貝里塔斯",
-    "TextEn": "Veritas",
-    "TextCn": "真理部"
+    "TextCn": "真理部",
+    "tags": ["千年科技学院", "社团"]
   },
   {
-    "Code": "Sakugawa",
-    "TextKr": "사쿠가와 중학교",
     "TextJp": "柵川中学",
-    "TextCn": "栅川中学"
+    "TextCn": "栅川中学",
+    "tags": ["学校全称"]
   },
   {
-    "Code": "Tokiwadai",
-    "TextKr": "토키와다이 중학교",
     "TextJp": "常盤台中学",
-    "TextCn": "常盘台中学"
+    "TextCn": "常盘台中学",
+    "tags": ["学校全称"]
   },
   {
-    "Code": "KnowledgeLiberationFront",
     "TextJp": "知識解放戦線",
-    "TextCn": "知识解放战线"
+    "TextCn": "知识解放战线",
+    "tags": ["红冬联邦学园", "社团"]
   },
   {
-    "Code": "Hyakkayouran",
     "TextJp": "百花繚乱紛争調停委員会",
-    "TextCn": "百花缭乱纷争调停委员会"
+    "TextCn": "百花缭乱纷争调停委员会",
+    "tags": ["百鬼夜行联合学院", "社团"]
   },
   {
     "TextJp": "クロノススクール",
     "TextCn": "克罗诺斯学院",
     "comment": "不确定，需要讨论",
-    "tags": ["不确定"]
+    "tags": ["不确定", "学校全称"]
   },
   {
     "TextJp": "クロノス報道部",
-    "TextCn": "克罗诺斯报道部"
+    "TextCn": "克罗诺斯报道部",
+    "tags": ["克罗诺斯学院", "社团"]
   },
   {
     "TextJp": "ヘルメット団",
@@ -548,5 +342,192 @@
   {
     "TextJp": "七囚人",
     "TextCn": "七囚人"
+  },
+  {
+    "TextJp": "水着",
+    "TextCn": "泳装",
+    "tags": ["皮肤后缀"]
+  },
+  {
+    "TextJp": "体操服",
+    "TextCn": "体操服",
+    "tags": ["皮肤后缀"]
+  },
+  {
+    "TextJp": "正月",
+    "TextCn": "正月",
+    "tags": ["皮肤后缀"]
+  },
+  {
+    "TextJp": "応援団",
+    "TextCn": "应援团",
+    "tags": ["皮肤后缀"]
+  },
+  {
+    "TextJp": "温泉",
+    "TextCn": "温泉",
+    "tags": ["皮肤后缀"]
+  },
+  {
+    "TextJp": "私服",
+    "TextCn": "私服",
+    "tags": ["皮肤后缀"]
+  },
+  {
+    "TextJp": "幼女",
+    "TextCn": "幼女",
+    "tags": ["皮肤后缀"]
+  },
+  {
+    "TextJp": "クリスマス",
+    "TextCn": "圣诞",
+    "tags": ["皮肤后缀"]
+  },
+  {
+    "TextJp": "バニーガール",
+    "TextCn": "兔女郎",
+    "tags": ["皮肤后缀"]
+  },
+  {
+    "TextJp": "ライディング",
+    "TextCn": "骑行服",
+    "tags": ["皮肤后缀"]
+  },
+  {
+    "TextJp": "メイド",
+    "TextCn": "女仆",
+    "tags": ["皮肤后缀"]
+  },
+  {
+    "TextJp": "ペロロの着ぐるみ",
+    "TextCn": "佩洛洛玩偶服",
+    "tags": ["皮肤后缀"]
+  },
+  {
+    "TextJp": "オペレーター",
+    "TextCn": "船务员",
+    "tags": ["不确定", "皮肤后缀"]
+  },
+  {
+    "TextJp": "オペレーター",
+    "TextCn": "操作员",
+    "tags": ["不确定", "皮肤后缀"]
+  },
+  {
+    "TextJp": "制服",
+    "TextCn": "制服",
+    "tags": ["皮肤后缀"]
+  },
+  {
+    "TextJp": "聖徒会",
+    "TextCn": "圣徒会？",
+    "tags": ["不确定", "皮肤后缀"]
+  },
+  {
+    "TextJp": "キービジュアル",
+    "TextCn": "主视觉图",
+    "tags": ["插画部分"]
+  },
+  {
+    "TextJp": "イラスト",
+    "TextCn": "贺图",
+    "tags": ["插画部分"]
+  },
+  {
+    "TextJp": "イラスト",
+    "TextCn": "插图",
+    "tags": ["插画部分"]
+  },
+  {
+    "TextJp": "イベント「」キービジュアル",
+    "TextCn": "活动「」主视觉图",
+    "tags": ["插画部分"]
+  },
+  {
+    "TextJp": "記念イラスト",
+    "TextCn": "纪念插图",
+    "tags": ["插画部分"]
+  },
+  {
+    "TextJp": "デザイン",
+    "TextCn": "设计",
+    "tags": ["角色设计原案"]
+  },
+  {
+    "TextJp": "コンセプトデザイン",
+    "TextCn": "概念设计",
+    "tags": ["角色设计原案"]
+  },
+  {
+    "TextJp": "スキルオブジェクト",
+    "TextCn": "技能物品？",
+    "tags": ["不确定", "角色设计原案"]
+  },
+  {
+    "TextJp": "ポースパターン",
+    "TextCn": "动作样式",
+    "tags": ["角色设计原案"]
+  },
+  {
+    "TextJp": "デザインパターン",
+    "TextCn": "设计样式",
+    "tags": ["角色设计原案"]
+  },
+  {
+    "TextJp": "固有武器デザインパターン",
+    "TextCn": "专属武器设计样式",
+    "tags": ["角色设计原案"]
+  },
+  {
+    "TextJp": "ヘイローデザインパターン",
+    "TextCn": "光环设计样式",
+    "tags": ["角色设计原案"]
+  },
+  {
+    "TextJp": "衣装デザイン",
+    "TextCn": "服装设计",
+    "tags": ["角色设计原案"]
+  },
+  {
+    "TextJp": "ラフスケッチ",
+    "TextCn": "设计草图",
+    "tags": ["角色设计原案"]
+  },
+  {
+    "TextJp": "エムブレムデザイン",
+    "TextCn": "涂鸦设计",
+    "tags": ["角色设计原案"]
+  },
+  {
+    "TextJp": "装飾品デザイン",
+    "TextCn": "装饰品设计",
+    "tags": ["角色设计原案"]
+  },
+  {
+    "TextJp": "ガジェットラフ",
+    "TextCn": "随身道具草图",
+    "tags": ["角色设计原案"]
+  },
+  {
+    "TextJp": "デザインラフ",
+    "TextCn": "",
+    "comment": "大瓜老师你的翻译呢",
+    "tags": ["角色设计原案"]
+  },
+  {
+    "TextJp": "コンセプト初期デザイン",
+    "TextCn": "早期概念设计",
+    "tags": ["角色设计原案"]
+  },
+  {
+    "TextJp": "車椅子デザイン",
+    "TextCn": "轮椅设计？",
+    "tags": ["不确定", "角色设计原案"]
+  },
+  {
+    "TextJp": "〇〇所属，〇〇の〇〇。",
+    "TextCn": "就读于……，……的……。",
+    "comment": "定型文模板",
+    "tags": ["定型文模板"]
   }
 ]
