@@ -10,8 +10,33 @@ const props = defineProps<{
 
 const searchString = ref("");
 
+const searchType: Array<{
+  label: "搜索文本" | "搜索标签";
+  value: "text" | "tags";
+}> = [
+  {
+    label: "搜索文本",
+    value: "text",
+  },
+  {
+    label: "搜索标签",
+    value: "tags",
+  },
+];
+
+const currentSearchType = ref(searchType[0].value);
+
 const filteredDictionary = computed(() =>
-  getPossibleCandidate(searchString.value, props.dictionary)
+  getPossibleCandidate(
+    searchString.value,
+    props.dictionary,
+    currentSearchType.value
+  ).sort((a, b) => {
+    if (a.TextCn && b.TextCn) {
+      return a.TextCn.localeCompare(b.TextCn);
+    }
+    return 0;
+  })
 );
 
 function getVirtualListHeight() {
@@ -35,7 +60,14 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <a-input allow-clear v-model="searchString" placeholder="输入中文或日语" />
+  <a-input-group class="w-full">
+    <a-input allow-clear v-model="searchString" placeholder="输入中文或日语" />
+    <a-select
+      v-model="currentSearchType"
+      :options="searchType"
+      :style="{ width: '7rem' }"
+    />
+  </a-input-group>
   <div class="dict-body mt-5">
     <a-list
       fill

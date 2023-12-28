@@ -7,7 +7,7 @@ export const useSettingsStore = defineStore({
   state: () => {
     return {
       settings: {
-        darkMode: true,
+        darkMode: false,
         alwaysOnTop: false,
       } as Settings,
     };

@@ -22,7 +22,7 @@ jobs:
         with:
           SSH_PRIVATE_KEY: ${{ secrets.SERVER_PASS_PRODUCTION }}
           ARGS: "-rltgoDzvO"
-          SOURCE: "./public/dictionary.json"
+          SOURCE: "public/dictionary.json"
           REMOTE_HOST: ${{ secrets.SERVER_HOST_PRODUCTION }}
           REMOTE_USER: ${{ secrets.SERVER_USER_PRODUCTION }}
           TARGET: "/var/www/translator"

@@ -71,9 +71,10 @@ watch(
   <a-modal v-model:visible="visible" title="设置" width="auto">
     <a-space direction="vertical" :style="{minWidth: '200px'}">
       <div class="flex justify-between gap-3 items-center">
-        <a-tooltip>
+        <a-tooltip position="tl">
           <template #content>
             <div>使用深色背景。</div>
+            <div>在 Windows 上更改背景时，应用需要重启。</div>
           </template>
           <span>深色模式</span>
         </a-tooltip>
@@ -81,7 +82,7 @@ watch(
       </div>
 
       <div class="flex justify-between gap-3 items-center">
-        <a-tooltip>
+        <a-tooltip position="tl">
           <template #content>
             <div>窗口会总是浮在所有应用前方，不会被遮挡。</div>
           </template>
@@ -91,7 +92,7 @@ watch(
       </div>
 
       <div class="flex justify-between gap-3 items-center">
-        <a-tooltip>
+        <a-tooltip position="tl">
           <template #content>
             <div>从服务器获取最新的词典条目。</div>
           </template>

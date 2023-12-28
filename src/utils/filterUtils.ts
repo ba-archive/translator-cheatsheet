@@ -13,7 +13,7 @@ export function similarity(s1: string | undefined | null, s2: string | undefined
   return 1 - distance(s1, s2) / Math.max(s1.length, s2.length);
 }
 
-export function isPossiblePinyin(searchString: string, candidate: string) {
+export function isPossiblePinyin(searchString: string, candidate: string | undefined | null) {
   if (!candidate) return false;
   const candidateWithoutSpecialCharacters = candidate.replaceAll(
     specialCharacters,
@@ -56,7 +56,21 @@ export function isPossibleCandidate(
     searchString.includes(candidateWithoutSpecialCharacters.TextJp) ||
     candidateWithoutSpecialCharacters.TextJp?.includes(searchString) ||
     candidateWithoutSpecialCharacters.TextJp?.startsWith(searchString) ||
-    candidateWithoutSpecialCharacters.TextJp?.endsWith(searchString)
+    candidateWithoutSpecialCharacters.TextJp?.endsWith(searchString) ||
+    isPossiblePinyin(searchString, candidateWithoutSpecialCharacters.comment)
+  ) {
+    return true;
+  }
+  return false;
+}
+
+export function isPossibleTag(searchString: string, candidate: Dictionary) {
+  if (
+    candidate.tags?.includes(searchString) ||
+    candidate.tags?.some(tag => tag.includes(searchString)) ||
+    candidate.tags?.some(tag => tag.startsWith(searchString)) ||
+    candidate.tags?.some(tag => tag.endsWith(searchString)) ||
+    candidate.tags?.some(tag => isPossiblePinyin(searchString, tag))
   ) {
     return true;
   }
@@ -65,11 +79,20 @@ export function isPossibleCandidate(
 
 export function getPossibleCandidate(
   searchString: string,
-  candidateList: Dictionary[]
+  candidateList: Dictionary[],
+  searchType: "text" | "tags" = "text"
 ) {
   if (searchString === "") {
     return candidateList;
   }
+
+  if (searchType === "tags") {
+    const possibleCandidates = candidateList.filter(candidate => {
+      return isPossibleTag(searchString, candidate);
+    });
+    return possibleCandidates;
+  }
+
   const possibleCandidates = candidateList.filter(candidate => {
     return isPossibleCandidate(searchString, candidate);
   });

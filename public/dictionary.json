@@ -131,7 +131,8 @@
     "TextTh": "C&C",
     "TextTw": "Cleaning&Clearing",
     "TextEn": "Cleaning & Clearing",
-    "TextCn": "C&C"
+    "TextCn": "Cleaning&Clearing",
+    "comment": "缩写使用C&C"
   },
   {
     "Code": "Countermeasure",
@@ -221,7 +222,7 @@
     "TextTh": "สถาบันเกเฮนน่า",
     "TextTw": "格黑娜學園",
     "TextEn": "Gehenna Academy",
-    "TextCn": "格黑娜"
+    "TextCn": "格黑娜学园"
   },
   {
     "Code": "Genryumon",
@@ -251,7 +252,7 @@
     "TextTh": "ชมรมของหวานหลังเลิกเรียน",
     "TextTw": "放學後的甜點部",
     "TextEn": "After-School Sweets Club",
-    "TextCn": "放课后甜点部"
+    "TextCn": "放学后甜点部"
   },
   {
     "Code": "Hyakkiyako",
@@ -260,7 +261,7 @@
     "TextTh": "สหพันธ์เฮียกคิยาโค",
     "TextTw": "百鬼夜行聯合學園",
     "TextEn": "Allied Hyakkiyako Academy",
-    "TextCn": "百鬼夜行"
+    "TextCn": "百鬼夜行联合学院"
   },
   {
     "Code": "Justice",
@@ -296,6 +297,14 @@
     "TextCn": "工务部"
   },
   {
+    "TextJp": "出版部",
+    "TextCn": "出版部"
+  },
+  {
+    "TextJp": "訓育支援部「梅花園」",
+    "TextCn": "训育援助部「梅花园」"
+  },
+  {
     "Code": "MatsuriOffice",
     "TextKr": "마츠리운영관리부",
     "TextJp": "お祭り運営委員会",
@@ -320,7 +329,7 @@
     "TextTh": "โรงเรียนวิทย์มิลเลเนียม",
     "TextTw": "千年科學學園",
     "TextEn": "Millennium Science School",
-    "TextCn": "千年"
+    "TextCn": "千年科技学院"
   },
   {
     "Code": "NinpoKenkyubu",
@@ -365,13 +374,17 @@
     "TextCn": "RABBIT小队"
   },
   {
+    "TextJp": "FOX小隊",
+    "TextCn": "FOX小队"
+  },
+  {
     "Code": "RedWinter",
     "TextKr": "붉은겨울 연방학원",
     "TextJp": "レッドウィンター連邦学園",
     "TextTh": "สหภาพเรดวินเทอร์",
     "TextTw": "赤冬聯邦學園",
     "TextEn": "Red Winter Federal Academy",
-    "TextCn": "红冬"
+    "TextCn": "红冬联邦学园"
   },
   {
     "Code": "RedwinterSecretary",
@@ -398,7 +411,7 @@
     "TextTh": "โรงเรียนมัธยมซานไห่จิง",
     "TextTw": "山海經高級中學",
     "TextEn": "Shanhaijing Academy",
-    "TextCn": "山海经"
+    "TextCn": "山海经高级中学校"
   },
   {
     "Code": "Shugyobu",
@@ -434,7 +447,7 @@
     "TextTh": "สถาบันพิเศษ SRT",
     "TextTw": "SRT特殊學園",
     "TextEn": "SRT Special Academy",
-    "TextCn": "SRT"
+    "TextCn": "SRT特殊学园"
   },
   {
     "Code": "TeaParty",
@@ -467,7 +480,7 @@
     "TextTh": "โรงเรียนสามัญทรีนิตี้",
     "TextTw": "三一綜合學園",
     "TextEn": "Trinity General School",
-    "TextCn": "圣三一"
+    "TextCn": "圣三一综合学园"
   },
   {
     "Code": "TrinityVigilance",
@@ -485,7 +498,7 @@
     "TextTh": "สถาบันฝึกตำรวจวัลคิรี่",
     "TextTw": "女武神警察學園",
     "TextEn": "Valkyrie Police School",
-    "TextCn": "瓦尔基里"
+    "TextCn": "瓦尔基里警察学校"
   },
   {
     "Code": "Veritas",
@@ -515,7 +528,25 @@
   },
   {
     "Code": "Hyakkayouran",
-    "TextJp": "百花繚乱",
-    "TextCn": "百花缭乱"
+    "TextJp": "百花繚乱紛争調停委員会",
+    "TextCn": "百花缭乱纷争调停委员会"
+  },
+  {
+    "TextJp": "クロノススクール",
+    "TextCn": "克罗诺斯学院",
+    "comment": "不确定，需要讨论",
+    "tags": ["不确定"]
+  },
+  {
+    "TextJp": "クロノス報道部",
+    "TextCn": "克罗诺斯报道部"
+  },
+  {
+    "TextJp": "ヘルメット団",
+    "TextCn": "钢盔团"
+  },
+  {
+    "TextJp": "七囚人",
+    "TextCn": "七囚人"
   }
 ]
