@@ -1,9 +1,12 @@
 import { appWindow } from "@tauri-apps/api/window";
 import { invoke } from "@tauri-apps/api/tauri";
 
-export function toggleTheme(darkTheme = false) {
+export async function toggleTheme(darkTheme = false) {
   document.body.setAttribute("arco-theme", darkTheme ? "dark" : "light");
   try {
+    const theme = await invoke("plugin:theme|get_theme");
+    console.log(theme);
+    if (theme === (darkTheme ? "dark" : "light")) return;
     invoke("plugin:theme|set_theme", {
       theme: darkTheme ? "dark" : "light",
     });
