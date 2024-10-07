@@ -14,7 +14,7 @@
   "dependencies": {
     "@arco-design/web-vue": "~2.52.1",
     "@arco-plugins/vite-vue": "^1.4.5",
-    "@tauri-apps/api": "^1.5.3",
+    "@tauri-apps/api": "^2.0.0",
     "@vitejs/plugin-legacy": "^5.2.0",
     "@vueuse/core": "^10.7.1",
     "autoprefixer": "~10.4.16",
@@ -34,7 +34,7 @@
     "vue": "^3.3.13"
   },
   "devDependencies": {
-    "@tauri-apps/cli": "^1.5.9",
+    "@tauri-apps/cli": "^2.0.0",
     "@types/node": "^20.10.5",
     "@vitejs/plugin-vue": "^5.0.0",
     "eslint": "^9.0.0",
