@@ -21,7 +21,7 @@
     "axios": "^1.6.3",
     "fastest-levenshtein": "^1.0.16",
     "pinia": "^2.1.7",
-    "pinia-plugin-persistedstate": "^3.2.1",
+    "pinia-plugin-persistedstate": "^4.0.0",
     "pinyin-pro": "^3.18.5",
     "postcss": "~8.4.32",
     "postcss-plugin-px2rem": "^0.8.1",
