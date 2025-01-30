@@ -16,7 +16,7 @@
     "@arco-plugins/vite-vue": "^1.4.5",
     "@tauri-apps/api": "^1.5.3",
     "@vitejs/plugin-legacy": "^5.2.0",
-    "@vueuse/core": "^10.7.1",
+    "@vueuse/core": "^12.0.0",
     "autoprefixer": "~10.4.16",
     "axios": "^1.6.3",
     "fastest-levenshtein": "^1.0.16",
