@@ -72,7 +72,7 @@ jobs:
           prerelease: false
       
       - name: Upload build artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: release-${{ matrix.platform }}
           path: ./src-tauri/target/release/bundle/*
