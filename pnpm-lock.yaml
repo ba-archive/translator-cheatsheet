@@ -74,8 +74,8 @@ devDependencies:
     specifier: ^20.10.5
     version: 20.10.5
   '@vitejs/plugin-vue':
-    specifier: ^5.0.0
-    version: 5.0.0(vite@5.4.12)(vue@3.3.13)
+    specifier: ^6.0.0
+    version: 6.0.8(vite@5.4.12)(vue@3.3.13)
   eslint:
     specifier: ^9.0.0
     version: 9.0.0
@@ -2019,6 +2019,10 @@ packages:
     dev: false
     optional: true
 
+  /@rolldown/pluginutils@1.0.1:
+    resolution: {integrity: sha512-2j9bGt5Jh8hj+vPtgzPtl72j0yRxHAyumoo6TNfAjsLB04UtpSvPbPcDcBMxz7n+9CYB0c1GxQFxYRg2jimqGw==}
+    dev: true
+
   /@rollup/pluginutils@5.1.0:
     resolution: {integrity: sha512-XTIWOPPcpvyKI6L1NHo0lFlCyznUEyPmPY1mc3KpPVDYulHSTvyeLNVW00QTLIAFNhR3kYnJTQHeGqU4M3n09g==}
     engines: {node: '>=14.0.0'}
@@ -2318,13 +2322,14 @@ packages:
       - supports-color
     dev: false
 
-  /@vitejs/plugin-vue@5.0.0(vite@5.4.12)(vue@3.3.13):
-    resolution: {integrity: sha512-7x5e8X4J1Wi4NxudGjJBd2OFerAi/0nzF80ojCzvfj347WVr0YSn82C8BSsgwSHzlk9Kw5xnZfj0/7RLnNwP5w==}
-    engines: {node: ^18.0.0 || >=20.0.0}
+  /@vitejs/plugin-vue@6.0.8(vite@5.4.12)(vue@3.3.13):
+    resolution: {integrity: sha512-0ZjgOg7oO6farnNGup7yvoM/YXZV84OZxHAwtflItNa/6zzQyVb5LNxyea3FEKEX2XlagIKzrlH7wwxkKgtiew==}
+    engines: {node: ^20.19.0 || >=22.12.0}
     peerDependencies:
-      vite: ^5.0.0
+      vite: ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0
       vue: ^3.2.25
     dependencies:
+      '@rolldown/pluginutils': 1.0.1
       vite: 5.4.12(@types/node@20.10.5)(sass@1.69.5)(terser@5.26.0)
       vue: 3.3.13(typescript@5.3.3)
     dev: true
